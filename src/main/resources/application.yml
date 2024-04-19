@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: car-parking-lot
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: admin
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+      ddl-auto: none
+      show-sql: true
+
+infra:
+  scheduler:
+    check-availability-cron: '0 0/1 * * * *'
+  hdb:
+    carpark-availability: https://api.data.gov.sg/v1/transport/carpark-availability
+  onemap:
+    url: https://www.onemap.gov.sg/api/common/convert/3414to4326
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzMjkwYTYxNjZjYmU2NDVlNzJlZTI3ZmNmMGFkNDEwMiIsImlzcyI6Imh0dHA6Ly9pbnRlcm5hbC1hbGItb20tcHJkZXppdC1pdC0xMjIzNjk4OTkyLmFwLXNvdXRoZWFzdC0xLmVsYi5hbWF6b25hd3MuY29tL2FwaS92Mi91c2VyL3Bhc3N3b3JkIiwiaWF0IjoxNzEzNDA5OTIzLCJleHAiOjE3MTM2NjkxMjMsIm5iZiI6MTcxMzQwOTkyMywianRpIjoiQ1ZCN0YyVHhsRDFkS1g3ZCIsInVzZXJfaWQiOjMyOTMsImZvcmV2ZXIiOmZhbHNlfQ.NlCjZuyCP1-b17ptJiDTFmnwk-ST9L05KFfUl_A7oqs
