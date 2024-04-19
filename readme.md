@@ -46,6 +46,8 @@ Domain driven design: https://martinfowler.com/tags/domain%20driven%20design.htm
 
 Hexagonal architecture: https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)
 
+Haversine formula: https://en.wikipedia.org/wiki/Haversine_formula
+
 ### Further develop
 
 Apply resilience: https://resilience4j.readme.io/docs/getting-started-3
