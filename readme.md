@@ -1,15 +1,3 @@
-## Assignment notes
-### Architecture
-Assignment intent to use DDD and Hexagonal architecture
-reference:
-
-https://martinfowler.com/tags/domain%20driven%20design.html
-
-https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)
-
-### Tech stack
-Spring boot, Postgres, docker-compose, flyway
-
 ### How to start application
 Run command below to start Postgres:
 
